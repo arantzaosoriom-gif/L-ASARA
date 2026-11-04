@@ -1,4 +1,4 @@
-.fondo-leopardo {
+ .fondo-leopardo {
   position: fixed;
   inset: 0;
   width: 100%;
@@ -6,10 +6,20 @@
   object-fit: cover;
   z-index: -1;
 }
-
+.logo-lasara{
+    display:block;
+    margin: 20px auto 0;
+    width: 140px;
+    height: auto;
+}
 body {
   margin: 0;
   min-height: 100vh;
+}
+.titulo{
+    text-align: center;
+    padding: 20px 0;
+    color: #908bcb;
 }
 .Formulario{
     position: absolute;
@@ -78,4 +88,45 @@ body {
     font-size: 16px;
     pointer-events: none;
     transition: .5s;
+}
+
+.Username span::before{
+    content:"" ;
+    position: absolute;
+    top:40;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background:#f3f0fd ;
+    transition: -5;
+}
+.Username input:focus ~ label,
+.Username input:focus ~ label{
+    top:-5px;
+    color:#908bcb ;
+}
+.Username input:focus ~ span::before,
+.Username input:focus ~ span::before{
+    width: 100%;
+
+}
+.contasena span::before{
+    content:"" ;
+    position: absolute;
+    top:40;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background:#f3f0fd ;
+    transition: -5;
+}
+.contasena input:focus ~ label,
+.contasena input:focus ~ label{
+    top:-5px;
+    color:#908bcb ;
+}
+.contasena input:focus ~ span::before,
+.contasena input:focus ~ span::before{
+    width: 100%;
+
 }
