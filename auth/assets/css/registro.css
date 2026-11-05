@@ -1,0 +1,184 @@
+ .fondo-leopardo {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.logo-lasara{
+    display:block;
+    margin: 20px auto 0;
+    width: 100px;
+    height: auto;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+.titulo{
+    text-align: center;
+    padding: 20px 0;
+    color: #908bcb;
+}
+.Formulario{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: #f3f0fd;
+    border-radius: 10px;
+}
+.Formulario h1 {
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.Formulario form {
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+.Formulario .Username{
+    position: relative;
+    border-bottom: 2px solid #f3f0fd;
+    margin: 30px 0;
+}
+.Username input{
+    width: 100%;
+    padding: 0px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.Formulario .contasena{
+    position: relative;
+    border-bottom: 2px solid #f3f0fd;
+    margin: 30px 0;
+}
+
+.Username label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    color: #d0c5f2;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+.contasena input{
+    width: 100%;
+    padding: 0px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.contasena label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    color: #d0c5f2;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+.Formulario .Email{
+    position: relative;
+    border-bottom: 2px solid #f3f0fd;
+    margin: 30px 0;
+}
+.Formulario .Email{
+    position: relative;
+    border-bottom: 2px solid #f3f0fd;
+    margin: 30px 0;
+}
+.Email input{
+    width: 100%;
+    padding: 0px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.Email label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    color: #d0c5f2;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+.Email span::before{
+    content:"" ;
+    position: absolute;
+    top:40;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background:#f3f0fd ;
+    transition: -5;
+}
+.Email input:focus ~ label,
+.Email input:focus ~ label{
+    top:-5px;
+    color:#908bcb ;
+}
+.Email input:focus ~ span::before,
+.Email input:focus ~ span::before{
+    width: 100%;
+
+}
+.Username span::before{
+    content:"" ;
+    position: absolute;
+    top:40;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background:#f3f0fd ;
+    transition: -5;
+}
+.Username input:focus ~ label,
+.Username input:focus ~ label{
+    top:-5px;
+    color:#908bcb ;
+}
+.Username input:focus ~ span::before,
+.Username input:focus ~ span::before{
+    width: 100%;
+
+}
+.contasena span::before{
+    content:"" ;
+    position: absolute;
+    top:40;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background:#f3f0fd ;
+    transition: -5;
+}
+.contasena input:focus ~ label,
+.contasena input:focus ~ label{
+    top:-5px;
+    color:#908bcb ;
+}
+.contasena input:focus ~ span::before,
+.contasena input:focus ~ span::before{
+    width: 100%;
+
+}
+.Formulario .recordar_checkbox{
+    position: center;
+    margin: 30px 0;
+}
